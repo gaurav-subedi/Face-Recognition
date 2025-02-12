@@ -1,45 +1,44 @@
 import cv2
+from hand_tracking import detect_hands  # Import hand tracking module
 
-# Load the Haar cascade for face detection
+# Load Haar cascade for face detection
 haar_face_cascade = cv2.CascadeClassifier('data/haarcascade_frontalface_alt.xml')
 
-# Open the default camera (usually the webcam)
+# Open the default camera
 cap = cv2.VideoCapture(0)
 
-# Check if the webcam is opened correctly
 if not cap.isOpened():
     print("Error: Could not open video device")
     exit()
 
 while True:
-    # Capture frame-by-frame
     ret, frame = cap.read()
-    
-    # If frame reading was not successful, break the loop
     if not ret:
         print("Failed to grab frame")
         break
 
-    # Convert the frame to grayscale as face detection requires grayscale images
+    # Convert to grayscale for face detection
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     
-    # Detect faces in the frame
+    # Detect faces
     faces = haar_face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5)
-    
-    # Draw a green rectangle around each detected face
+
+    # Draw rectangles around detected faces
     for (x, y, w, h) in faces:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
-    
-    # Display the resulting frame with detected faces
-    cv2.imshow("Face Detection", frame)
-    
-    # Wait for 1 ms for a key press and get the key code.
-    # If 'q' or 'Esc' is pressed, break the loop.
+
+    # Apply hand tracking on the frame
+    frame = detect_hands(frame)
+
+    # Show the frame with both face and hand detection
+    cv2.imshow("Face & Hand Detection", frame)
+
+    # Exit when 'q' or Esc is pressed
     key = cv2.waitKey(1) & 0xFF
-    if key == ord('q') or key == 27:  # 27 is the Esc key
+    if key == ord('q') or key == 27:
         print("Exiting...")
         break
 
-# When everything is done, release the capture and close all OpenCV windows
+# Release resources
 cap.release()
 cv2.destroyAllWindows()
