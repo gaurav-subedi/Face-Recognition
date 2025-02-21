@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "IytLguus7Ao=",
+  "success": true,
+  "projectFilePath": "E:\\Programming\\Machine Learning\\OpenCV\\Face-Recognition\\CSharp-UI\\FaceHandDetectionUI\\FaceHandDetectionUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Windows 10 Pro\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Windows 10 Pro\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Windows 10 Pro\\.nuget\\packages\\microsoft.io.recyclablememorystream\\3.0.0\\microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512",
+    "C:\\Users\\Windows 10 Pro\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Windows 10 Pro\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512",
+    "C:\\Users\\Windows 10 Pro\\.nuget\\packages\\system.threading.channels\\8.0.0\\system.threading.channels.8.0.0.nupkg.sha512",
+    "C:\\Users\\Windows 10 Pro\\.nuget\\packages\\websocket.client\\5.1.2\\websocket.client.5.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
