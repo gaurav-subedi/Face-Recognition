@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FaceHandDetectionUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af63546726179d2d0ab9fe81b190156c93b35e6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d6594423747a6838551952f6157da94b33f6758")]
 [assembly: System.Reflection.AssemblyProductAttribute("FaceHandDetectionUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FaceHandDetectionUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
