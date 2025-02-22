@@ -25,7 +25,7 @@ This project is a real-time Face & Gesture Detection System that detects faces a
 ## Installation & Setup
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/face-gesture-detection.git
+git clone https://github.com/gaurav-subedi/face-gesture-detection.git
 cd face-gesture-detection
 ```
 
